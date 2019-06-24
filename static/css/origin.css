@@ -1,0 +1,244 @@
+@media screen and (max-width: 55.5em) {
+.star-rating {
+  position: relative;
+  width: 5em;
+  height: 1em;
+  font-size: 25px;
+
+}
+.star-rating-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+}
+.star-rating-back {
+  color: #ccc;
+}
+}
+
+.star-rating {
+  position: relative;
+  width: 5em;
+  height: 1em;
+  font-size: 25px;
+
+}
+.star-rating-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+}
+.star-rating-back {
+  color: #ccc;
+}
+
+
+/* プロフィールの囲み */
+.box11{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.box11 p {
+    margin: 0; 
+    padding: 0;
+    text-align:center; font-size: 20px; font-weight: bold;
+}
+
+.box11 span{
+    font-size: 50px;
+ }
+.box11 a{
+        font-weight: bold;
+}
+/* 箇条書き */
+.inmorita ul, ol {
+  padding: 0;
+  position: relative;
+}
+
+.inmorita ul li, ol li {
+  color: black;
+  border-left: solid 8px orange;/*左側の線*/
+  background: whitesmoke;/*背景色*/
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  border-radius: 0 15px 15px 0;/*右側の角だけ丸く*/
+  padding: 0.5em;
+  list-style-type: none!important;
+}
+.inmorita ul li {
+        font-size: 20px; font-weight: bold;
+}
+
+/*スマホ対応に*/
+@media screen and (max-width: 55.5em) {
+        .box11 p {
+                margin: 0; 
+                padding: 0;
+                text-align:center; font-size: 10px; font-weight: bold;
+        }
+        .box11 span{
+                font-size: 15px;
+        }
+}
+
+
+
+                        .container{
+                                text-align:center;
+                        }
+                        .responcible{
+                                width:100%;
+                                max-width: 100%;
+                                height: auto;
+                        }
+
+
+                        *, *:before, *:after {
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+.cp_cssslider {
+background:#cccccc;
+border: 10px solid #ffffff;
+box-shadow:1px 1px 5px rgba(0,0,0,0.7);
+height:200px;
+width:300px;
+margin:2em auto;
+overflow:visible;
+position:relative;
+}
+.cp_cssslider .mask {
+overflow:hidden;
+height:180px;/* ボーダー分を差し引く */
+}
+.cp_cssslider ul {
+margin:0;
+padding:0;
+position:relative;
+}
+/* tooltip */
+.cp_cssslider .tooltip {
+background:rgba(0,0,0,0.7);
+width:200px;
+height:auto;
+position:relative;
+bottom:95px;
+left:-300px;
+-webkit-transition:all 0.3s ease-in-out;
+transition:all 0.3s ease-in-out;
+}
+.cp_cssslider .tooltip h1 {
+color:#fff;
+padding:0 0 0 20px;
+}
+.cp_cssslider li:hover .tooltip{
+left:0px;
+}
+.cp_cssslider:hover li,
+.cp_cssslider:hover .cp_progressbar {
+-webkit-animation-play-state:paused;
+animation-play-state:paused;
+}
+.cp_cssslider li {
+width:300px;
+height:200px;
+position:absolute;
+top:-200px;
+list-style:none;
+}
+.cp_cssslider li:nth-child(1){
+-webkit-animation:cycle1 25s linear infinite;
+animation:cycle1 25s linear infinite;
+}
+.cp_cssslider li:nth-child(2){
+-webkit-animation:cycle2 25s linear infinite;
+animation:cycle2 25s linear infinite;
+}
+.cp_cssslider li:nth-child(3){
+-webkit-animation:cycle3 25s linear infinite;
+animation:cycle3 25s linear infinite;
+}
+.cp_cssslider li:nth-child(4){
+-webkit-animation:cycle4 25s linear infinite;
+animation:cycle4 25s linear infinite;
+}
+.cp_cssslider li:nth-child(5){
+-webkit-animation:cycle5 25s linear infinite;
+animation:cycle5 25s linear infinite;
+}
+@keyframes cycle1 {
+0%  { top:0px; }
+4%  { top:0px; }
+16% { top:0px; opacity:1; z-index:0; }
+20% { top:200px; opacity:0; z-index:0; }
+21% { top:-200px; opacity:0; z-index:-1; }
+50% { top:-200px; opacity:0; z-index:-1; }
+92% { top:-200px; opacity:0; z-index:0; }
+96% { top:-200px; opacity:0; }
+100%{ top:0px; opacity:1; }
+}
+@keyframes cycle2 {
+0%  { top:-200px; opacity:0; }
+16% { top:-200px; opacity:0; }
+20% { top:0px; opacity:1; }
+24% { top:0px; opacity:1; }
+36% { top:0px; opacity:1; z-index:0; }
+40% { top:200px; opacity:0; z-index:0; }
+41% { top:-200px; opacity:0; z-index:-1; }
+100%{ top:-200px; opacity:0; z-index:-1; }
+}
+@keyframes cycle3 {
+0%  { top:-200px; opacity:0; }
+36% { top:-200px; opacity:0; }
+40% { top:0px; opacity:1; }
+44% { top:0px; opacity:1; }
+56% { top:0px; opacity:1; z-index:0; }
+60% { top:200px; opacity:0; z-index:0; }
+61% { top:-200px; opacity:0; z-index:-1; }
+100%{ top:-200px; opacity:0; z-index:-1; }
+}
+@keyframes cycle4 {
+0%  { top:-200px; opacity:0; }
+56% { top:-200px; opacity:0; }
+60% { top:0px; opacity:1; }
+64% { top:0px; opacity:1; }
+76% { top:0px; opacity:1; z-index:0; }
+80% { top:200px; opacity:0; z-index:0; }
+81% { top:-200px; opacity:0; z-index:-1; }
+100%{ top:-200px; opacity:0; z-index:-1; }
+}
+@keyframes cycle5 {
+0%  { top:-200px; opacity:0; }
+76% { top:-200px; opacity:0; }
+80% { top:0px; opacity:1; }
+84% { top:0px; opacity:1; }
+96% { top:0px; opacity:1; z-index:0; }
+100%{ top:200px; opacity:0; z-index:0; }
+}
+/* progressbar */
+.cp_progressbar {
+position:relative;
+top:-5px;
+width:680px;
+height:5px;
+background:#000000;
+-webkit-animation:progressbar 25s ease-out infinite;
+animation:progressbar 25s ease-out infinite;
+}
+/* animation */
+@keyframes progressbar {
+0%, 20%, 40%, 60%, 80%, 100% { width:0%; opacity:0; }
+4%, 24%, 44%, 64%, 84% { width:0%; opacity:0.3; }
+16%, 36%, 56%, 76%, 96% { width:100%; opacity:0.3; }
+18%, 38%, 58%, 78%, 98% { width:100%; opacity:0; }
+}
+
