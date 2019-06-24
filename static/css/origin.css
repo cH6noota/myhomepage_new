@@ -1,22 +1,23 @@
+
+.star-rating {
+  position: relative;
+  width: 5em;
+  height: 1em;
+  font-size: 25px;
+
+}
+.star-rating-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+}
+.star-rating-back {
+  color: #ccc;
+}
+
 @media screen and (max-width: 55.5em) {
-.star-rating {
-  position: relative;
-  width: 5em;
-  height: 1em;
-  font-size: 25px;
-
-}
-.star-rating-front {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  color: #ffcc33;
-}
-.star-rating-back {
-  color: #ccc;
-}
-}
 
 .star-rating {
   position: relative;
@@ -30,11 +31,16 @@
   top: 0;
   left: 0;
   overflow: hidden;
-  color: #ffcc33;
+  color: #008000;
 }
 .star-rating-back {
   color: #ccc;
 }
+
+
+}
+
+
 
 
 /* プロフィールの囲み */
